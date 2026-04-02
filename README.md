@@ -42,11 +42,11 @@ pip install django djangorestframework djangorestframework-simplejwt django-envi
 
 ### 3 Konfigurasi Database (MySQL Laragon)
 
-1 Buka Laragon dan pastikan MySQL berjalan.
+1. Buka Laragon dan pastikan MySQL berjalan.
 
-2.Buka HeidiSQL, buat database baru dengan nama pos_db.
+2. Buka HeidiSQL, buat database baru dengan nama pos_db.
 
-3.Pastikan core/settings.py sudah terkonfigurasi untuk MySQL.
+3. Pastikan core/settings.py sudah terkonfigurasi untuk MySQL.
 
 ### 4 Migrasi Database
 
@@ -126,7 +126,5 @@ python manage.py test
 
 - core/: Pengaturan utama Django & Routing global.
 - apps/users/: Custom User Model & Manajemen Role.
-
 - apps/products/: Logika produk & Seeder.
-
 - apps/transactions/: Logika transaksi & Service Layer.
