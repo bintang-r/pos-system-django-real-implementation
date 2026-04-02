@@ -101,6 +101,8 @@ Gunakan Postman untuk melakukan tes pada endpoint berikut:
 | ------ | --------------------------- | --------------------------------- |
 | POST   | /api/transactions/checkout/ | Melakukan transaksi & potong stok |
 
+---
+
 ## Format Body Checkout (JSON):
 
 ```json
