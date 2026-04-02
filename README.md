@@ -1,4 +1,11 @@
-# 🧾 POS System Django - Real Implementation
+# 🛒 POS System Django - Real Implementation
+
+Sistem Point of Sale (POS) backend dengan fitur Manajemen Produk, Autentikasi JWT, dan Transaksi otomatis (Potong Stok).
+
+![Django](https://img.shields.io/badge/Django-6.0.3-092E20?logo=django)
+![Python](https://img.shields.io/badge/Python-3.14-blue?logo=python)
+![MySQL](https://img.shields.io/badge/MySQL-8.0-orange?logo=mysql)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 Sistem backend **Point of Sale (POS)** berbasis **Django REST Framework** dengan fitur:
 
@@ -68,6 +75,27 @@ python manage.py createsuperuser
 ```powershell
 python manage.py createsuperuser
 ```
+
+---
+
+## 🛠️ Langkah Awal: Membuat Struktur Proyek
+
+Jika Anda ingin membangun ulang atau menambah aplikasi, berikut adalah urutan perintah yang kita gunakan:
+
+```bash
+# 1. Membuat Folder Utama & Project
+django-admin startproject core .
+
+# 2. Membuat Folder Apps (untuk merapikan struktur)
+mkdir apps
+cd apps
+python ../manage.py startapp users
+python ../manage.py startapp products
+python ../manage.py startapp transactions
+cd ..
+```
+
+---
 
 ### 📦 Menjalankan Data Seeder
 
