@@ -38,9 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # CUSTOM APPS
+    # Third-party
     'rest_framework',
     'rest_framework_simplejwt',
+
+    # CUSTOM APPS (Gunakan format apps.nama_aplikasi)
     'apps.users',
     'apps.products',
     'apps.transactions',
@@ -94,6 +96,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# DEFAULT ROLE
+# Beritahu Django untuk menggunakan Custom User Model kita
+AUTH_USER_MODEL = 'users.User'
 
 
 # Password validation
